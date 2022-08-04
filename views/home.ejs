@@ -1,0 +1,16 @@
+<h1>Total Users Available: <%= userCount %> </h1>
+<form action="/api/v1/create_user" method="post">
+    <input type="text" name="username" placeholder="Enter Your Name" required>
+    <input type="number" name="coins" placeholder="No of Coins" required>
+    <input type="submit" value="CreateUser">
+</form>
+
+
+<h1>Enter User Id's from 1 to <%= userCount %> </h1>
+<form action="/api/v1/create_game" method="post"> 
+    <input type="number" name="user_id1" placeholder="Enter First  Player Id" required>
+    <input type="number" name="user_id2" placeholder="Enter Second Player Id" required>
+    <input type="number" name="user_id3" placeholder="Enter Third  Player Id" required>
+    <input type="submit" value="createGame"> 
+</form>
+

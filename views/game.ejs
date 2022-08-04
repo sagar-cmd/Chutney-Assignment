@@ -1,0 +1,13 @@
+
+<p>No of coins left by user1:<%= user_id1 %> <%= coins1 %> </p>
+<p>No of coins left by user2:<%= user_id2 %> <%= coins2 %> </p>
+<p>No of coins left by user3:<%= user_id3 %> <%= coins3 %> </p>
+
+
+<h1>Enter The Coins bet by each user: </h1>
+<form action="/api/v1/game_starter/?user_id1=<%= user_id1 %> && user_id2=<%= user_id2 %> && user_id3=<%= user_id3 %>" method="post"> 
+    <input type="number" name="coins1" placeholder="Enter First  Player Coins" required>
+    <input type="number" name="coins2" placeholder="Enter Second Player Coins" required>
+    <input type="number" name="coins3" placeholder="Enter Third  Player Coins" required>
+    <input type="submit" value="createGame"> 
+</form>

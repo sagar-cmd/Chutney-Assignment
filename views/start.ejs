@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+
+  <body>
+    <h1>Blackjack</h1>
+
+    <p >Welcome to Blackjack!</p>
+
+    <p>Dealer</p>
+    <%= dealerScore %> 
+    <ul>
+        <% for(let i=0;i<dealerCards.length;i++) { %>
+            <li><%= dealerCards[i].value %> + "of" + <%= dealerCards[i].suit %></li>
+        <% } %>  
+    </ul>
+    
+
+
+    <p>User1</p>
+    <%= User1Score %>
+    <ul>
+        <% for(let i=0;i<User1Cards.length;i++) { %>
+            <li><%= User1Cards[i].value %> + "of" + <%= User1Cards[i].suit %></li>
+        <% } %> 
+    </ul> 
+
+    <form>
+        <input  type="submit" value="Hit">
+    </form>
+
+    <form>
+        <input  type="submit" value="Stand">
+    </form>
+
+    <form>
+        <input  type="submit" value="Double">
+    </form>
+
+    <% if(split) {%> 
+        <form>
+            <input  type="submit" value="Split">
+        </form>
+    <% } %> 
+
+
+
+
+    <p>User2</p>
+    <%= User2Score %>
+    <ul>
+        <% for(let i=0;i<User2Cards.length;i++) { %>
+            <li><%= User2Cards[i].value %> + "of" + <%= User2Cards[i].suit %></li>
+        <% } %> 
+    </ul> 
+
+    <form>
+        <input  type="submit" value="Hit">
+    </form>
+
+    <form>
+        <input  type="submit" value="Stand">
+    </form>
+
+    <form>
+        <input  type="submit" value="Double">
+    </form>
+
+    <% if(split) {%> 
+        <form>
+            <input  type="submit" value="Split">
+        </form>
+    <% } %> 
+
+
+    <p>User3</p>
+    <%= User3Score %> 
+    <ul>
+        <% for(let i=0;i<User3Cards.length;i++) { %>
+            <li><%= User3Cards[i].value %> + "of" + <%= User3Cards[i].suit %></li>
+        <% } %> 
+    </ul> 
+
+    <form>
+        <input  type="submit" value="Hit">
+    </form>
+
+    <form>
+        <input  type="submit" value="Stand">
+    </form>
+
+    <form>
+        <input  type="submit" value="Double">
+    </form>
+
+    <% if(split) {%> 
+        <form>
+            <input  type="submit" value="Split">
+        </form>
+    <% } %> 
+    
+
+  </body>
+
+</html>
