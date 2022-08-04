@@ -1,7 +1,6 @@
 # Chutney-Assignment
 
 # Setting up the Backend
-Change directory to blackjack-backend
 
 Install required packages:
 
