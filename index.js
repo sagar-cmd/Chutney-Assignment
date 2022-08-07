@@ -47,6 +47,7 @@ app.listen(port,function(err,result){
         return ;
     }
     console.log("Listening to the port");
+    console.log("localhost:8080")
 });
 
 
